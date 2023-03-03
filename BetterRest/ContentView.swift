@@ -24,7 +24,7 @@ struct ContentView: View {
             
 //            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
 //                .labelsHidden()
-            selectingDatePicker(wakeUp: $wakeUp)
+            selectingDatePicker(wakeUp: $wakeUp) // RFER #1
         }
         .padding()
     }
@@ -45,7 +45,7 @@ struct ContentView: View {
 }
 
 struct selectingDatePicker: View {
-    @Binding var wakeUp:Date
+    @Binding var wakeUp:Date // RFER #1
     
     var body: some View {
         VStack{

@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F30889129B29B7000ED0021 /* RFER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RFER.md; sourceTree = "<group>"; };
 		3FDDE78B29B1CAA1002A2B4C /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDDE78E29B1CAA1002A2B4C /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		3FDDE79029B1CAA1002A2B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		3FDDE78229B1CAA1002A2B4C = {
 			isa = PBXGroup;
 			children = (
+				3F30889129B29B7000ED0021 /* RFER.md */,
 				3FDDE7BC29B1CF68002A2B4C /* README.md */,
 				3FDDE7B829B1CB51002A2B4C /* BetterRest.csv */,
 				3FDDE7B929B1CB52002A2B4C /* SleepCalculator.mlmodel */,
