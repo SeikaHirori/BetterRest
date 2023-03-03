@@ -61,8 +61,7 @@ struct code_part_2: View {
             .navigationTitle("BetterRest")
             .toolbar {
                 Button("Calculate", action: calculateBedTime)
-            
-        }
+            }
     }
 }
     
