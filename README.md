@@ -20,6 +20,7 @@ Project 4 Specifications:
     - [x] 1. BetterRest: Introduction
     - [x] 2. Entering numbers with Stepper
     - [ ] 3. Selecting dates and times with DatePicker
+        - WIP
     - [ ] 4. Working with dates
     - [ ] 5. Training a model with Create ML
 
