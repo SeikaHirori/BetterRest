@@ -21,5 +21,8 @@ Project 4 Specifications:
     - [x] 2. Entering numbers with Stepper
     - [x] 3. Selecting dates and times with DatePicker
     - [x] 4. Working with dates
-    - [ ] 5. Training a model with Create ML
-            - WIP
+    - [x] 5. Training a model with Create ML
+
+- Part 2: https://www.hackingwithswift.com/100/swiftui/27
+    - [ ] .
+    
