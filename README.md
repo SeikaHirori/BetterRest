@@ -24,5 +24,8 @@ Project 4 Specifications:
     - [x] 5. Training a model with Create ML
 
 - Part 2: https://www.hackingwithswift.com/100/swiftui/27
-    - [ ] .
+    - [ ] 1. Building a basic layout
+    - [ ] 2. Connecting SwiftUI to Core ML
+    - [ ] 3. Cleaning up the user interface
+
     
