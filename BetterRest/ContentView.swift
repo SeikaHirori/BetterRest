@@ -12,6 +12,10 @@ struct ContentView: View {
     @State private var wakeUp:Date = Date.now
     @State private var sleepAmount: Double = 8.0
     @State private var coffeeAmount: Int = 1
+    
+    @State private var alertTitle:String = ""
+    @State private var alertMessage:String = ""
+    @State private var showingAlert:Bool = false
 
 
     var body: some View {
