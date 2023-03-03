@@ -21,5 +21,6 @@ Project 4 Specifications:
     - [x] 2. Entering numbers with Stepper
     - [x] 3. Selecting dates and times with DatePicker
     - [ ] 4. Working with dates
+            - WIP
     - [ ] 5. Training a model with Create ML
 
