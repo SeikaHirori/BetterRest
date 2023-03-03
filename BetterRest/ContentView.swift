@@ -15,33 +15,8 @@ struct ContentView: View {
 
 
     var body: some View {
-        VStack {
-                        
-            exampleTextDates()
-            
-            Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-            
-            
-//            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
-//                .labelsHidden()
-            selectingDatePicker(wakeUp: $wakeUp) // RFER #1
-        }
-        .padding()
+        Text("Hello World :3")
     }
-    
-    func exampleDates() {
-        let tomorrow = Date.now.addingTimeInterval(86400)
-        
-        let range = Date.now...tomorrow
-    }
-    
-    func exampleComponents() {
-        var components = Calendar.current.dateComponents([.hour, .minute], from: Date.now)
-        let hour = components.hour ?? 0
-        let minute = components.minute ?? 0
-        
-    }
-    
 }
 
 struct selectingDatePicker: View {
@@ -64,6 +39,37 @@ struct exampleTextDates: View {
             Text(Date.now.formatted(date: .long, time: .shortened))
         }
     }
+}
+
+struct examplesPart_One:View {
+    @Binding var wakeUp:Date
+    @Binding var sleepAmount:Double
+    
+    var body: some View {
+        VStack {
+                                    
+            Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+            
+//            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
+//                .labelsHidden()
+            selectingDatePicker(wakeUp: $wakeUp) // RFER #1
+        }
+        .padding()
+    }
+    
+    func exampleDates() {
+        let tomorrow = Date.now.addingTimeInterval(86400)
+        
+        let range = Date.now...tomorrow
+    }
+    
+    func exampleComponents() {
+        var components = Calendar.current.dateComponents([.hour, .minute], from: Date.now)
+        let hour = components.hour ?? 0
+        let minute = components.minute ?? 0
+        
+    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
