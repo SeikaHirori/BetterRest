@@ -20,9 +20,11 @@ struct ContentView: View {
             exampleTextDates()
             
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
-                .labelsHidden()
             
+            
+//            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
+//                .labelsHidden()
+            selectingDatePicker(wakeUp: $wakeUp)
         }
         .padding()
     }
@@ -42,6 +44,16 @@ struct ContentView: View {
     
 }
 
+struct selectingDatePicker: View {
+    @Binding var wakeUp:Date
+    
+    var body: some View {
+        VStack{
+            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
+                .labelsHidden()
+        }
+    }
+}
 
 struct exampleTextDates: View {
     var body: some View {
