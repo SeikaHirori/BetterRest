@@ -11,7 +11,12 @@ struct ContentView: View {
     
     @State private var sleepAmount: Double = 8.0
     @State private var wakeUp:Date = Date.now
-    
+
+    var components = DateComponents()
+    components.hour = 8 ?? 0
+    components.minute = 0 ?? 0
+    let date = Calendar.current.date(from: components) ?? Date.now
+
     var body: some View {
         VStack {
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
@@ -26,10 +31,6 @@ struct ContentView: View {
         
         let range = Date.now...tomorrow
     }
-    
-    
-    
-    
     
 }
 
