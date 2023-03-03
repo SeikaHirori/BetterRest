@@ -15,7 +15,31 @@ struct ContentView: View {
 
 
     var body: some View {
-        Text("Hello World :3")
+        VStack{
+            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount)
+        }
+    }
+}
+
+
+struct code_part_2: View {
+    @Binding var wakeUp: Date
+    @Binding var sleepAmount: Double
+    @Binding var coffeeAmount: Int
+    
+    var body: some View {
+        
+        NavigationView {
+            VStack {
+                Text("When do you want to wake up?")
+                    .font(.headline)
+                
+                DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                
+                // more to come
+            }
+        }
     }
 }
 
