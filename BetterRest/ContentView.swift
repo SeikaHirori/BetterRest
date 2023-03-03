@@ -57,8 +57,18 @@ struct code_part_2: View {
                 .padding()
                 // more to come
             }
+            .navigationTitle("BetterRest")
+            .toolbar {
+                Button("Calculate", action: calculateBedTime)
+            
         }
     }
+}
+    
+    func calculateBedTime() {
+        
+    }
+    
 }
 
 struct selectingDatePicker: View {
