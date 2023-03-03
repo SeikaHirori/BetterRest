@@ -17,7 +17,7 @@ ______
 Project 4 Specifications:
 
 - Part 1: https://www.hackingwithswift.com/100/swiftui/26
-    - [ ] 1. BetterRest: Introduction
+    - [x] 1. BetterRest: Introduction
     - [ ] 2. Entering numbers with Stepper
     - [ ] 3. Selecting dates and times with DatePicker
     - [ ] 4. Working with dates
