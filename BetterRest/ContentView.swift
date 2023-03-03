@@ -57,6 +57,7 @@ struct code_part_2: View {
                 .padding()
                 // more to come
             }
+            .padding()
             .navigationTitle("BetterRest")
             .toolbar {
                 Button("Calculate", action: calculateBedTime)
