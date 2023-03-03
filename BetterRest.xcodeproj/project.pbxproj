@@ -16,6 +16,7 @@
 		3FDDE7AC29B1CAA4002A2B4C /* BetterRestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE7AB29B1CAA4002A2B4C /* BetterRestUITestsLaunchTests.swift */; };
 		3FDDE7BA29B1CB52002A2B4C /* BetterRest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDE7B829B1CB51002A2B4C /* BetterRest.csv */; };
 		3FDDE7BB29B1CB52002A2B4C /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE7B929B1CB52002A2B4C /* SleepCalculator.mlmodel */; };
+		3FDDE7BD29B1CF68002A2B4C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDE7BC29B1CF68002A2B4C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3FDDE7AB29B1CAA4002A2B4C /* BetterRestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FDDE7B829B1CB51002A2B4C /* BetterRest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BetterRest.csv; sourceTree = "<group>"; };
 		3FDDE7B929B1CB52002A2B4C /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		3FDDE7BC29B1CF68002A2B4C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		3FDDE78229B1CAA1002A2B4C = {
 			isa = PBXGroup;
 			children = (
+				3FDDE7BC29B1CF68002A2B4C /* README.md */,
 				3FDDE7B829B1CB51002A2B4C /* BetterRest.csv */,
 				3FDDE7B929B1CB52002A2B4C /* SleepCalculator.mlmodel */,
 				3FDDE78D29B1CAA1002A2B4C /* BetterRest */,
@@ -239,6 +242,7 @@
 			files = (
 				3FDDE79629B1CAA4002A2B4C /* Preview Assets.xcassets in Resources */,
 				3FDDE7BA29B1CB52002A2B4C /* BetterRest.csv in Resources */,
+				3FDDE7BD29B1CF68002A2B4C /* README.md in Resources */,
 				3FDDE79329B1CAA4002A2B4C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
