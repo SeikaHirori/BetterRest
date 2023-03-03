@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F30889C29B2AC0700ED0021 /* BetterRest_1.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 3F30889B29B2AC0700ED0021 /* BetterRest_1.mlproj */; };
 		3FDDE78F29B1CAA1002A2B4C /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE78E29B1CAA1002A2B4C /* BetterRestApp.swift */; };
 		3FDDE79129B1CAA1002A2B4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDE79029B1CAA1002A2B4C /* ContentView.swift */; };
 		3FDDE79329B1CAA4002A2B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDE79229B1CAA4002A2B4C /* Assets.xcassets */; };
@@ -38,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		3F30889129B29B7000ED0021 /* RFER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RFER.md; sourceTree = "<group>"; };
+		3F30889229B2AB4000ED0021 /* BetterRest.mlproj */ = {isa = PBXFileReference; lastKnownFileType = file; path = BetterRest.mlproj; sourceTree = SOURCE_ROOT; };
+		3F30889329B2AB4000ED0021 /* BetterRest.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BetterRest.csv; sourceTree = SOURCE_ROOT; };
+		3F30889429B2AB4000ED0021 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = SOURCE_ROOT; };
+		3F30889B29B2AC0700ED0021 /* BetterRest_1.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BetterRest_1.mlproj; sourceTree = "<group>"; };
 		3FDDE78B29B1CAA1002A2B4C /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDDE78E29B1CAA1002A2B4C /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		3FDDE79029B1CAA1002A2B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 				3F30889129B29B7000ED0021 /* RFER.md */,
 				3FDDE7BC29B1CF68002A2B4C /* README.md */,
 				3FDDE7B829B1CB51002A2B4C /* BetterRest.csv */,
+				3F30889B29B2AC0700ED0021 /* BetterRest_1.mlproj */,
 				3FDDE7B929B1CB52002A2B4C /* SleepCalculator.mlmodel */,
 				3FDDE78D29B1CAA1002A2B4C /* BetterRest */,
 				3FDDE79E29B1CAA4002A2B4C /* BetterRestTests */,
@@ -132,6 +138,9 @@
 		3FDDE7A829B1CAA4002A2B4C /* BetterRestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3F30889329B2AB4000ED0021 /* BetterRest.csv */,
+				3F30889229B2AB4000ED0021 /* BetterRest.mlproj */,
+				3F30889429B2AB4000ED0021 /* SleepCalculator.mlmodel */,
 				3FDDE7A929B1CAA4002A2B4C /* BetterRestUITests.swift */,
 				3FDDE7AB29B1CAA4002A2B4C /* BetterRestUITestsLaunchTests.swift */,
 			);
@@ -246,6 +255,7 @@
 				3FDDE7BA29B1CB52002A2B4C /* BetterRest.csv in Resources */,
 				3FDDE7BD29B1CF68002A2B4C /* README.md in Resources */,
 				3FDDE79329B1CAA4002A2B4C /* Assets.xcassets in Resources */,
+				3F30889C29B2AC0700ED0021 /* BetterRest_1.mlproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
