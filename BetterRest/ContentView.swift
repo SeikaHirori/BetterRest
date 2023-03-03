@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-            DatePicker("Please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
+            DatePicker("Please enter a date", selection: $wakeUp, in: Date.now...)
                 .labelsHidden()
         }
         .padding()
