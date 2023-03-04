@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var wakeUp:Date = Date.now
+    @State private var wakeUp:Date = defaultWakeTime
     @State private var sleepAmount: Double = 8.0
     @State private var coffeeAmount: Int = 1
     
@@ -17,10 +17,16 @@ struct ContentView: View {
     @State private var alertMessage:String = ""
     @State private var showingAlert:Bool = false
 
+    var defaultWakeTime: Date {
+        var components = DateComponents()
+        components.hour = 7
+        components.minute = 0
+        return Calendar.current.date(from: components) ?? Date.now
+    }
 
     var body: some View {
         VStack{
-            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount, alertTitle: $alertTitle, alertMessage: $alertMessage, showingAlert: $showingAlert)
+            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount, alertTitle: $alertTitle, alertMessage: $alertMessage, showingAlert: $showingAlert, defaultWakeTime: defaultWakeTime)
         }
     }
 }
@@ -34,6 +40,8 @@ struct code_part_2: View {
     @Binding var alertTitle: String
     @Binding var alertMessage: String
     @Binding var showingAlert: Bool
+    
+    var defaultWakeTime: Date
     
     var body: some View {
         
