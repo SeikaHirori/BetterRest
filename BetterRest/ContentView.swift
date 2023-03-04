@@ -17,7 +17,7 @@ struct ContentView: View {
     @State private var alertMessage:String = ""
     @State private var showingAlert:Bool = false
 
-    var defaultWakeTime: Date {
+    static var defaultWakeTime: Date {
         var components = DateComponents()
         components.hour = 7
         components.minute = 0
@@ -26,7 +26,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack{
-            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount, alertTitle: $alertTitle, alertMessage: $alertMessage, showingAlert: $showingAlert, defaultWakeTime: defaultWakeTime)
+            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount, alertTitle: $alertTitle, alertMessage: $alertMessage, showingAlert: $showingAlert, defaultWakeTime: ContentView.defaultWakeTime)
         }
     }
 }
