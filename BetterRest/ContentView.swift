@@ -20,7 +20,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack{
-            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount)
+            code_part_2(wakeUp: $wakeUp, sleepAmount: $sleepAmount, coffeeAmount: $coffeeAmount, alertTitle: $alertTitle, alertMessage: $alertMessage, showingAlert: $showingAlert)
         }
     }
 }
@@ -30,6 +30,10 @@ struct code_part_2: View {
     @Binding var wakeUp: Date
     @Binding var sleepAmount: Double
     @Binding var coffeeAmount: Int
+    
+    @Binding var alertTitle: String
+    @Binding var alertMessage: String
+    @Binding var showingAlert: Bool
     
     var body: some View {
         
@@ -66,8 +70,13 @@ struct code_part_2: View {
             .toolbar {
                 Button("Calculate", action: calculateBedTime)
             }
+            .alert(alertTitle, isPresented: $showingAlert) {
+                Button("OK") { }
+            } message: {
+                Text(alertMessage)
+            }
+        }
     }
-}
     
     func calculateBedTime() {
         
@@ -86,13 +95,16 @@ struct code_part_2: View {
             
             
             let sleepTime = wakeUp - prediction.actualSleep
-            
+            alertTitle = "Your ideal bedtime is..."
+            alertMessage = sleepTime.formatted(date: .omitted, time: .shortened)
         } catch {
             // something went wrong :'[
+            alertTitle = "Error"
         }
         
-        
+        showingAlert = true
     }
+    
     
 }
 
