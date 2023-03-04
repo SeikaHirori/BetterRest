@@ -26,8 +26,7 @@ Project 4 Specifications:
 - Part 2: https://www.hackingwithswift.com/100/swiftui/27
     - [x] 1. Building a basic layout
     - [x] 2. Connecting SwiftUI to Core ML
-    - [ ] 3. Cleaning up the user interface
-        -  WIP
+    - [x] 3. Cleaning up the user interface
 
 - Part 3: https://www.hackingwithswift.com/100/swiftui/28
         - Challenges: https://www.hackingwithswift.com/books/ios-swiftui/betterrest-wrap-up 
