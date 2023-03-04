@@ -46,7 +46,7 @@ struct code_part_2: View {
     var body: some View {
         
         NavigationView {
-            VStack(spacing: 5) {
+            Form {
                 VStack {
                     Text("When do you want to wake up?")
                         .font(.headline)
